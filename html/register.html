@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký | Hoa Mơ</title>
+    <link rel="stylesheet" href="../css/register.css" />
+    <script src="../js/register.js" defer></script>
+  </head>
+  <body>
+    <main class="register-page">
+      <section class="register-visual">
+        <a href="index.html" class="brand">✿ Hoa Mơ</a>
+
+        <img
+          src="../images/hoa-banner.jpg"
+          alt="Bó hoa tươi Hoa Mơ"
+          class="hero-flower"
+        />
+
+        <div class="visual-text">
+          <p class="eyebrow">A LITTLE GIFT OF LOVE</p>
+          <h1>Bắt đầu từ<br />một điều dịu dàng.</h1>
+          <p>Tạo tài khoản để khám phá thế giới hoa tươi.</p>
+        </div>
+      </section>
+
+      <section class="register-content">
+        <div class="register-form-wrap">
+          <a href="index.html" class="back-link">← Về trang chủ</a>
+
+          <p class="eyebrow">CHÀO BẠN ĐẾN VỚI HOA MƠ</p>
+          <h2>Tạo tài khoản<br /><em>mới nhé!</em></h2>
+
+          <p class="description">
+            Chỉ vài bước nhỏ để bắt đầu hành trình trao gửi yêu thương.
+          </p>
+
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="fullname">Họ và tên</label>
+              <input
+                type="text"
+                id="fullname"
+                placeholder="Nhập họ và tên"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="ban@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Số điện thoại</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Nhập số điện thoại"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Mật khẩu</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Ít nhất 6 ký tự"
+                minlength="6"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Xác nhận mật khẩu</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Nhập lại mật khẩu"
+                required
+              />
+            </div>
+
+            <label class="terms">
+              <input type="checkbox" id="agreeTerms" required />
+              <span> Tôi đồng ý với các điều khoản sử dụng của Hoa Mơ. </span>
+            </label>
+
+            <p id="registerMessage" class="message"></p>
+
+            <button type="submit" class="submit-btn">
+              Tạo tài khoản <span>→</span>
+            </button>
+          </form>
+
+          <p class="switch-page">
+            Bạn đã có tài khoản?
+            <a href="login.html">Đăng nhập</a>
+          </p>
+
+          <p class="demo-note">
+            Giao diện minh họa — chưa lưu tài khoản vào hệ thống.
+          </p>
+
+          <footer>© 2026 Hoa Mơ · Gửi điều dịu dàng qua những đóa hoa.</footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

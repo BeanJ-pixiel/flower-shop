@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  color: #493b3b;
+  background: #fffaf7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.register-page {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  min-height: 100vh;
+}
+
+/* KHU VỰC GIỚI THIỆU */
+
+.register-visual {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 42px 45px;
+  background: linear-gradient(145deg, #f9dfdf, #fff0e8 60%, #f6d7d7);
+}
+
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #9f5267;
+}
+
+.flower-art {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(100px, 13vw, 175px);
+  filter: drop-shadow(0 15px 15px #b77d7d35);
+}
+
+.visual-text {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  color: #bd8290;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.visual-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(29px, 3vw, 42px);
+  line-height: 1.35;
+  color: #65464c;
+}
+
+.visual-text > p:last-child {
+  margin-top: 16px;
+  color: #87666a;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* KHU VỰC ĐĂNG KÝ */
+
+.register-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 35px;
+  background: #fffdfb;
+}
+
+.register-form-wrap {
+  width: 100%;
+  max-width: 430px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #986776;
+  font-size: 13px;
+}
+
+.back-link:hover,
+.switch-page a:hover {
+  color: #bd7189;
+}
+
+.register-form-wrap h2 {
+  margin-bottom: 13px;
+  font-family: "Playfair Display", serif;
+  font-size: 39px;
+  line-height: 1.2;
+  color: #49383c;
+}
+
+.register-form-wrap h2 em {
+  color: #bd7b8c;
+  font-weight: 500;
+}
+
+.description {
+  margin-bottom: 23px;
+  color: #8b7b7b;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #5b474b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #eadbd9;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #493b3b;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #c98798;
+  box-shadow: 0 0 0 3px #f8e8eb;
+}
+
+.form-group input::placeholder {
+  color: #b8aaaa;
+}
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 18px 0;
+  color: #8b7b7b;
+  font-size: 11px;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+.terms input {
+  margin-top: 3px;
+  accent-color: #bd7b8c;
+}
+
+.message {
+  min-height: 18px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.message.error {
+  color: #c34558;
+}
+
+.message.success {
+  color: #42815d;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  border-radius: 9px;
+  background: #bd7b8c;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.submit-btn:hover {
+  background: #a96377;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 15px #bd7b8c30;
+}
+
+.switch-page {
+  margin-top: 22px;
+  color: #8b7b7b;
+  text-align: center;
+  font-size: 12px;
+}
+
+.switch-page a {
+  color: #aa6479;
+  font-weight: 700;
+}
+
+.demo-note {
+  margin-top: 22px;
+  padding: 11px;
+  border-radius: 8px;
+  background: #fff4f1;
+  color: #a17e7b;
+  text-align: center;
+  font-size: 10px;
+}
+
+.register-form-wrap footer {
+  margin-top: 22px;
+  color: #aa9b99;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.8;
+}
+
+/* MÀN HÌNH NHỎ */
+
+@media (max-width: 768px) {
+  .register-page {
+    grid-template-columns: 1fr;
+  }
+
+  .register-visual {
+    position: relative;
+    min-height: 240px;
+    padding: 25px;
+  }
+
+  .brand {
+    font-size: 24px;
+  }
+
+  .flower-art {
+    top: 25px;
+    right: 25px;
+    left: auto;
+    transform: none;
+    font-size: 75px;
+  }
+
+  .visual-text {
+    margin-top: 55px;
+    margin-bottom: 0;
+  }
+
+  .visual-text h1 {
+    font-size: 28px;
+  }
+
+  .register-content {
+    padding: 30px 22px;
+  }
+
+  .register-form-wrap h2 {
+    font-size: 34px;
+  }
+}
+
+.register-flower img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
